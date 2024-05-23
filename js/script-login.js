@@ -2,7 +2,7 @@ if(!localStorage.getItem("base-dados")){
 
     let listaUsuarios = [
       {txtNm:"Diego Furigo",txtCpf:"18384381924", txtEmail:"diego@email.com",txtSenha:"112233"},
-      {txtNm:"Luis Henrique",txtCpf:"93640573649", txtEmail:"luiz@email.com",txtSenha:"445566"},
+      {txtNm:"Luis Henrique",txtCpf:"93640573649", txtEmail:"luis@email.com",txtSenha:"445566"},
       {txtNm:"Melissa Pereira",txtCpf:"16395736522", txtEmail:"melissa@email.com",txtSenha:"778899"},
     ];
       localStorage.setItem("base-dados", JSON.stringify(listaUsuarios));
