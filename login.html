@@ -4,43 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style-login.css">
+    <script src="./js/script-login.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Login</h1>
-        <form id="loginForm">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Entrar</button>
-            <p id="error-message"></p>
+        <div>
+            <p class="validar"></p>
+        </div>
+        <form id="loginForm" action="#" method="get" onsubmit="return validaCampos(this.idEmail,this.idSenha)">
+            <fieldset>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="txtSenha" id="idSenha" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </fieldset>
         </form>
-        <p>Ainda não tem uma conta? <a href="#" id="cadastrar-link">Cadastre-se</a></p>
     </div>
-
-    <div id="cadastro-form" class="container" style="display: none;">
-        <h1>Cadastro</h1>
-        <form id="cadastroForm">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email-cadastro" name="email" required>
-            </div>
-            <div>
-                <label for="password">Senha:</label>
-                <input type="password" id="password-cadastro" name="password" required>
-            </div>
-            <button type="submit">Cadastrar</button>
-            <p id="cadastro-message"></p>
-        </form>
-        <p>Já tem uma conta? <a href="#" id="voltar-login">Faça login</a></p>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
