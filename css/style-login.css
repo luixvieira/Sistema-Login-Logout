@@ -1,0 +1,17 @@
+.erro {
+    color: rgb(177, 31, 31);
+    font-style: italic;
+    font-size: medium;
+    margin: 0 10vw;
+    background-color: rgb(248, 166, 166);
+    border-radius: 5px;
+}
+
+.sucesso {
+    color: rgb(27, 110, 19);
+    font-style: italic;
+    font-size: medium;
+    margin: 0 10vw;
+    background-color: rgb(169, 248, 166);
+    border-radius: 5px;
+}
